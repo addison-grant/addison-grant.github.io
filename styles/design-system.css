@@ -1,0 +1,82 @@
+@import url("/styles/nav.css");
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+
+main {
+    padding: 1em;
+}
+
+h1.page-title {
+    font-size: 3em;
+    text-align: center;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 8px;
+    padding: 3px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 8px;
+    padding: 4px;
+}
+
+h3 {
+    font-size: 1.6em;
+    margin: 8px;
+    padding: 5px;
+}
+
+h4 {
+    font-size: 1.4em;
+    margin: 4px;
+    padding: 6px;
+}
+
+h5 {
+    font-size: 1.2em;
+    margin: 2px;
+    padding: 7px;
+}
+
+h6 {
+    font-size: 1em;
+    margin: 1px;
+    padding: 8px;
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightblue;
+    box-shadow: 5px 5px 5px rgb(124, 155, 165);
+    font-weight: bold;
+}
+
+.code-block {
+    display: block;
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    width: fit-content;
+    background-color: rgba(173, 216, 230, 0.632);
+}
+
+.code-inline {
+    display: inline;
+    border-radius: 0.25em;
+}

@@ -1,0 +1,78 @@
+@import url("/styles/design-system.css");
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.high-level-layouts-figures {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "vc1"
+        "vc2";
+    width: 100%;
+}
+
+.high-level-layouts-figures figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.high-level-layouts-figures>.figure1 {
+    grid-area: vc1;
+}
+
+.high-level-layouts-figures>.figure2 {
+    grid-area: vc2;
+}
+
+.three-part-container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 1em;
+}
+
+.three-part-child {
+    grid-column-start: 2;
+    grid-column-end: -2;
+    padding: 1em;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+@media (min-width: 1000px) {
+    .high-level-layouts-figures {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "hc1 hc2";
+        grid-gap: 4;
+        width: 100%;
+    }
+
+    .high-level-layouts-figures>.figure1 {
+        grid-area: hc1;
+    }
+
+    .high-level-layouts-figures>.figure2 {
+        grid-area: hc2;
+    }
+
+    .three-part-container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .three-part-child {
+        grid-column-start: initial;
+        grid-column-end: initial;
+    }
+}
