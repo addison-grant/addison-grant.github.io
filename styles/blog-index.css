@@ -1,0 +1,86 @@
+@import url("/styles/design-system.css");
+
+:root {
+    --entry-component-height: 300px;
+    --entry-component-border-radius: calc(var(--entry-component-height) * 0.1);
+}
+
+div.blog-entries-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.entry-components-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+}
+
+div.blog-entries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+div.entry-component {
+    border: 1px solid black;
+    border-radius: var(--entry-component-border-radius);
+    height: fit-content;
+    /* padding: calc(var(--entry-component-height) * 0.1); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    width: 80%;
+    box-shadow: 4px 4px 5px rgb(124, 155, 165);
+}
+
+div.entry-component > a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: var(--entry-component-border-radius);
+    display: flex;
+    flex-direction: column;
+}
+
+.entry-title {
+    display: inline-block;
+    text-align: center;
+    margin: 0.5em;
+    border-radius: var(--entry-component-border-radius);
+}
+
+div.entry-component img {
+    --margin-calc: calc(var(--entry-component-height) * 0.1);
+    --negative-margin: calc(-1 * var(--margin-calc));
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: var(--entry-component-border-radius);
+    border-top-right-radius: var(--entry-component-border-radius);
+    object-fit: cover;
+    object-position: top;
+}
+
+div.blog-entries-list-container {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+ol.blog-entries-list {
+    display: flex;
+    flex-direction: row-reverse;
+    width: fit-content;
+    justify-content: flex-end;
+}
+
+li.entry-link {
+    display: inline-block;
+    margin-right: 10px;
+}
